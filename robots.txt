@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/sitemap.xml
