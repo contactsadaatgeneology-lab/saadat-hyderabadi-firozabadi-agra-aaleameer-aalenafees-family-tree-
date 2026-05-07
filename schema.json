@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Syed Shahzaib Ali Naqvi",
+  "alternateName": "Shahzaib Naqvi",
+  "description": "Naqvi Bukhari Sayyid genealogy descendant from Imam Ali al-Naqi al-Hadi (A.S) through Hazrat Jalaluddin Surkh Posh Bukhari (R.A).",
+  "url": "https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree/",
+  "familyName": "Naqvi Bukhari Sayyid",
+  "parent": {
+    "@type": "Person",
+    "name": "Syed Qadeer Ali Naqvi"
+  },
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Naqvi Bukhari Saadat Genealogy Archive"
+  },
+  "knowsAbout": [
+    "Naqvi genealogy",
+    "Bukhari Sayyid lineage",
+    "Ahl al-Bayt descendants",
+    "Hyderabad Sindh Sadat history",
+    "Uch Sharif genealogy",
+    "Imam Ali al-Naqi lineage"
+  ]
+}
