@@ -1,6 +1,6 @@
 # Naqvi Bukhari Saadat Genealogy Archive
 
-This website contains historical genealogy records, lineage chains, migration history, and family documentation related to Naqvi Bukhari Sayyid families of Hyderabad Sindh, Karachi, Agra, Firozabad, Uch Sharif, and related lineages.
+This website contains historical genealogy records, lineage chains, migration history, family documentation, research publications, and heritage archives related to Naqvi Bukhari Sayyid families of Hyderabad Sindh, Karachi, Agra, Firozabad, Uch Sharif, and related lineages.
 
 Primary topics:
 - Ahl al-Bayt lineage
@@ -11,9 +11,73 @@ Primary topics:
 - Imam Ali al-Naqi lineage
 - Hyderabad Sindh Sadat families
 - Agra and Firozabad Sayyid migration history
+- Aal-e-Zahra heritage
+- Historical manuscripts
+- Genealogical research publications
+- Family tree documentation
 
 Primary genealogy branch:
-Syed Shahzaib Ali Naqvi → Syed Qadeer Ali Naqvi → Syed Umeed Ali → Syed Muhabbat Ali → Syed Nafees Ali → Syed Ashiq Ali → Syed Shakir Ali Shah → Syed Ameer Ali Shah
+Syed Shahzaib Ali Naqvi → Syed Qadeer Ali Naqvi → Syed Umeed Ali → Syed Muhabbat Ali → Syed Nafees Ali Shah → Syed Ashiq Ali → Syed Shakir Ali Shah → Syed Ameer Ali Shah
 
-Website:
-https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree/
+Core Lineage:
+Syed Jalaluddin Surkh Posh Bukhari
+Syed Sultan Ahmed Kabir
+Syed Ameer Ali Shah
+Syed Shakir Ali Shah
+Syed Ashiq Ali
+Syed Nafees Ali Shah
+Syed Muhabbat Ali
+Syed Umeed Ali
+Syed Qadeer Ali Naqvi
+Syed Shahzaib Ali Naqvi
+Hafiz Syed Shahzain Ali Naqvi
+Syed Shariq Ali Naqvi
+Syed Yusha Ali Naqvi
+
+Publications:
+
+Family of Saadat Naqvi
+ISBN: 9798195665623
+DOI: 10.5281/zenodo.20070090
+ASIN: B0H15D6T4G
+ASIN: B0H15RF861
+
+https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/family-of-saadat-naqvi.html
+
+Al Shareef Al Sadaat Ansab Ul Anbiya o Sadaat Arab o Ajam
+Known as Aal-e-Zahra (s.a.)
+
+ISBN: 9798289704406
+DOI: 10.5281/zenodo.20199191
+ASIN: B0F1X334KZ
+
+https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/Aal-e-zahra-sa-syed-umeed-ali.html
+
+Gulzar-e-Jalaliya
+
+https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/gulzar-e-jalaliya/ur/
+
+Primary Website:
+https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/
+
+Google Site:
+https://sites.google.com/view/ansaabesadaat/home
+
+Keywords:
+Aal-e-Zahra
+Ahl al-Bayt
+Sadat
+Sadaat
+Naqvi
+Bukhari
+Hussaini
+Genealogy
+Family Tree
+Ansab
+Syed
+Sayyid
+Firozabad
+Agra
+Hyderabad Sindh
+Uch Sharif
+Jalaluddin Surkh Posh Bukhari
