@@ -1,0 +1,51 @@
+Project: Naqvi Bukhari Saadat Genealogy Archive
+
+Maintainer:
+SaadatGeneology
+
+Primary Website:
+https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/
+
+Google Site:
+https://sites.google.com/view/ansaabesadaat/home
+
+Research Areas:
+Ahl al-Bayt Lineage
+Naqvi Bukhari Genealogy
+Sadat Studies
+South Asian Muslim History
+Migration History
+Historical Manuscripts
+Genealogical Documentation
+
+Publications:
+
+Family of Saadat Naqvi
+ISBN: 9798195665623
+DOI: 10.5281/zenodo.20070090
+
+Al Shareef Al Sadaat Ansab Ul Anbiya o Sadaat Arab o Ajam
+ISBN: 9798289704406
+DOI: 10.5281/zenodo.20199191
+
+Gulzar-e-Jalaliya
+
+Core Lineage:
+
+Syed Jalaluddin Surkh Posh Bukhari
+Syed Sultan Ahmed Kabir
+Syed Ameer Ali Shah
+Syed Shakir Ali Shah
+Syed Ashiq Ali
+Syed Nafees Ali Shah
+Syed Muhabbat Ali
+Syed Umeed Ali
+Syed Qadeer Ali Naqvi
+Syed Shahzaib Ali Naqvi
+Hafiz Syed Shahzain Ali Naqvi
+Syed Shariq Ali Naqvi
+Syed Yusha Ali Naqvi
+
+Languages:
+Urdu
+English
