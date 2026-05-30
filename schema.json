@@ -1,25 +1,82 @@
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Syed Shahzaib Ali Naqvi",
-  "alternateName": "Shahzaib Naqvi",
-  "description": "Naqvi Bukhari Sayyid genealogy descendant from Imam Ali al-Naqi al-Hadi (A.S) through Hazrat Jalaluddin Surkh Posh Bukhari (R.A).",
-  "url": "https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree/",
-  "familyName": "Naqvi Bukhari Sayyid",
-  "parent": {
-    "@type": "Person",
-    "name": "Syed Qadeer Ali Naqvi"
-  },
-  "memberOf": {
+  "@type": "WebSite",
+  "name": "Naqvi Bukhari Saadat Genealogy Archive",
+  "url": "https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/",
+  "description": "Historical genealogy records, lineage chains, migration history, manuscripts, family documentation and research publications related to Naqvi Bukhari Sayyid families, descendants of Ahl al-Bayt, Jalaluddin Surkh Posh Bukhari and associated lineages.",
+  "publisher": {
     "@type": "Organization",
-    "name": "Naqvi Bukhari Saadat Genealogy Archive"
+    "name": "Saadat Geneology"
   },
-  "knowsAbout": [
-    "Naqvi genealogy",
-    "Bukhari Sayyid lineage",
-    "Ahl al-Bayt descendants",
-    "Hyderabad Sindh Sadat history",
-    "Uch Sharif genealogy",
-    "Imam Ali al-Naqi lineage"
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Ahl al-Bayt Lineage"
+    },
+    {
+      "@type": "Thing",
+      "name": "Naqvi Bukhari Sayyid Genealogy"
+    },
+    {
+      "@type": "Thing",
+      "name": "Jalaluddin Surkh Posh Bukhari Descendants"
+    },
+    {
+      "@type": "Thing",
+      "name": "Imam Ali al-Naqi Lineage"
+    }
+  ],
+  "hasPart": [
+    {
+      "@type": "Book",
+      "name": "Family of Saadat Naqvi",
+      "author": {
+        "@type": "Person",
+        "name": "Syed Ali Naqvi Bukhari"
+      },
+      "isbn": "9798195665623",
+      "identifier": "10.5281/zenodo.20070090",
+      "url": "https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/family-of-saadat-naqvi.html"
+    },
+    {
+      "@type": "Book",
+      "name": "Al Shareef Al Sadaat Ansab Ul Anbiya o Sadaat Arab o Ajam",
+      "alternateName": "Aal-e-Zahra (s.a.)",
+      "isbn": "9798289704406",
+      "identifier": "10.5281/zenodo.20199191",
+      "url": "https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/Aal-e-zahra-sa-syed-umeed-ali.html"
+    },
+    {
+      "@type": "Book",
+      "name": "Gulzar-e-Jalaliya",
+      "url": "https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/gulzar-e-jalaliya/ur/"
+    }
+  ],
+  "sameAs": [
+    "https://sites.google.com/view/ansaabesadaat/home",
+    "https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/gulzar-e-jalaliya/ur/"
+  ],
+  "keywords": [
+    "Ahl al-Bayt",
+    "Sadat",
+    "Sadaat",
+    "Naqvi",
+    "Bukhari",
+    "Hussaini",
+    "Genealogy",
+    "Family Tree",
+    "Ansab",
+    "Syed",
+    "Sayyid",
+    "Hyderabad Sindh",
+    "Karachi",
+    "Agra",
+    "Firozabad",
+    "Uch Sharif",
+    "Jalaluddin Surkh Posh Bukhari",
+    "Imam Ali al-Naqi",
+    "Aal-e-Zahra",
+    "Family of Saadat Naqvi",
+    "Gulzar-e-Jalaliya"
   ]
 }
