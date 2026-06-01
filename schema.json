@@ -47,12 +47,17 @@
       "url": "https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/Aal-e-zahra-sa-syed-umeed-ali.html"
     },
     {
-      "@type": "Book",
-      "name": "Gulzar-e-Jalaliya",
-      "url": "https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/gulzar-e-jalaliya/ur/"
-    }
-  ],
-  "sameAs": [
+  "@type": "Book",
+  "name": "Gulzar-e-Jalaliya",
+  "url": "https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/gulzar-e-jalaliya/ur/"
+},
+{
+  "@type": "CollectionPage",
+  "name": "PDF Archive",
+  "url": "https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/pdf-archive.html"
+}
+],
+"sameAs": [
     "https://sites.google.com/view/ansaabesadaat/home",
     "https://contactsadaatgeneology-lab.github.io/saadat-hyderabadi-firozabadi-agra-aaleameer-aalenafees-family-tree-/gulzar-e-jalaliya/ur/"
   ],
