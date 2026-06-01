@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>گلزارِ جلالیہ — ساداتِ نقوی البخاری</title>
+<meta name="description" content="گلزارِ جلالیہ — سید امیر علی شاہ نقوی البخاریؒ اور ان کی اولاد و نسل کی روحانی، تاریخی اور نسبی تاریخ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --black: #0a0805;
+  --dark: #111008;
+  --card: #16130a;
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --gold-dark: #8a6d2f;
+  --gold-glow: rgba(201,168,76,0.15);
+  --crimson: #8b1a1a;
+  --crimson-light: #b22222;
+  --green: #1a3a1a;
+  --green-light: #2d5a2d;
+  --text: #f0e6c8;
+  --text-dim: #a89060;
+  --border: rgba(201,168,76,0.25);
+  --font-main: 'Noto Nastaliq Urdu', 'Amiri', serif;
+  --font-arabic: 'Amiri', serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--black);
+  color: var(--text);
+  font-family: var(--font-main);
+  line-height: 2.0;
+  direction: rtl;
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(201,168,76,0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 90%, rgba(139,26,26,0.06) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Ccircle cx='50' cy='50' r='0.8' fill='%23c9a84c' opacity='0.06'/%3E%3C/svg%3E");
+}
+
+/* ─── SCROLL BAR ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--dark); }
+::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 3px; }
+
+/* ─── LAYOUT ─── */
+.wrapper { display: flex; min-height: 100vh; }
+
+/* ─── SIDEBAR ─── */
+.sidebar {
+  width: 300px;
+  min-width: 300px;
+  background: var(--dark);
+  border-left: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.sidebar-header {
+  background: linear-gradient(180deg, var(--crimson) 0%, #5a0f0f 100%);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid var(--gold);
+}
+
+.sidebar-header .bismillah {
+  font-family: var(--font-arabic);
+  font-size: 1.1rem;
+  color: var(--gold-light);
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+
+.sidebar-header h1 {
+  font-family: var(--font-arabic);
+  font-size: 1.4rem;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 0.3rem;
+}
+
+.sidebar-header p {
+  font-size: 0.75rem;
+  color: var(--gold-light);
+  opacity: 0.8;
+}
+
+.sidebar-search {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidebar-search input {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-family: var(--font-main);
+  font-size: 0.85rem;
+  direction: rtl;
+  outline: none;
+}
+
+.sidebar-search input:focus { border-color: var(--gold); }
+
+.nav-list { list-style: none; padding: 0.5rem 0; flex: 1; }
+
+.nav-item a {
+  display: block;
+  padding: 0.45rem 1rem;
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  border-right: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+.nav-item a:hover, .nav-item a.active {
+  color: var(--gold-light);
+  background: var(--gold-glow);
+  border-right-color: var(--gold);
+}
+
+.nav-item.chapter-head a {
+  color: var(--gold);
+  font-size: 0.88rem;
+  background: rgba(201,168,76,0.06);
+  border-right-color: var(--gold-dark);
+  font-weight: 600;
+}
+
+/* ─── MAIN CONTENT ─── */
+.main {
+  flex: 1;
+  max-width: calc(100% - 300px);
+  overflow-x: hidden;
+}
+
+/* ─── HERO ─── */
+.hero {
+  background: linear-gradient(135deg, #0f0a03 0%, var(--crimson) 40%, #0f0a03 100%);
+  padding: 4rem 3rem;
+  text-align: center;
+  position: relative;
+  border-bottom: 3px solid var(--gold);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 5 L75 30 L40 75 L5 30 Z' stroke='%23c9a84c' stroke-width='0.3' fill='none' opacity='0.12'/%3E%3C/svg%3E") repeat;
+  pointer-events: none;
+}
+
+.hero .bismillah-hero {
+  font-family: var(--font-arabic);
+  font-size: 2.2rem;
+  color: var(--gold-light);
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  text-shadow: 0 0 30px rgba(201,168,76,0.4);
+}
+
+.hero .durood {
+  font-family: var(--font-arabic);
+  font-size: 0.9rem;
+  color: var(--gold-light);
+  opacity: 0.85;
+  margin-bottom: 1.5rem;
+  line-height: 2;
+}
+
+.hero h1 {
+  font-family: var(--font-arabic);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.6);
+}
+
+.hero .subtitle {
+  font-size: 1rem;
+  color: var(--gold-light);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.hero .meta-badges {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;
+}
+
+.badge {
+  background: rgba(201,168,76,0.15);
+  border: 1px solid var(--gold-dark);
+  color: var(--gold-light);
+  padding: 0.2rem 0.75rem;
+  border-radius: 2rem;
+  font-size: 0.72rem;
+}
+
+/* ─── BOOK INFO ─── */
+.book-info {
+  background: var(--card);
+  border: 1px solid var(--border);
+  margin: 2rem 2rem 0;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.book-info-item { padding: 0.75rem; border-right: 3px solid var(--gold-dark); }
+.book-info-item:last-child { border-right: none; }
+.book-info-item .label { color: var(--gold); font-size: 0.75rem; margin-bottom: 0.3rem; }
+.book-info-item .val { color: var(--text); font-size: 0.9rem; line-height: 1.8; }
+
+/* ─── CONTENT AREA ─── */
+.content-area { padding: 2rem; }
+
+/* ─── SECTIONS ─── */
+.section {
+  margin-bottom: 3rem;
+  scroll-margin-top: 20px;
+}
+
+.section-title {
+  font-family: var(--font-arabic);
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  color: var(--gold);
+  border-bottom: 2px solid var(--gold-dark);
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '❖';
+  position: absolute;
+  left: 0;
+  bottom: -0.1rem;
+  color: var(--crimson-light);
+  font-size: 0.8rem;
+}
+
+.chapter-title {
+  font-family: var(--font-arabic);
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  color: var(--gold-light);
+  margin: 2rem 0 1rem;
+  padding-right: 1rem;
+  border-right: 4px solid var(--crimson-light);
+}
+
+.sub-title {
+  font-family: var(--font-arabic);
+  font-size: 1.1rem;
+  color: var(--gold);
+  margin: 1.5rem 0 0.75rem;
+  padding-right: 0.75rem;
+  border-right: 3px solid var(--gold-dark);
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 2.1;
+  color: var(--text);
+  text-align: justify;
+}
+
+/* ─── LINEAGE CHAIN ─── */
+.lineage-chain {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.lineage-chain::before {
+  content: '';
+  position: absolute;
+  right: 1.5rem; top: 1.5rem; bottom: 1.5rem; width: 2px;
+  background: linear-gradient(to bottom, var(--gold), var(--crimson-light), transparent);
+  opacity: 0.4;
+}
+
+.lineage-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed rgba(201,168,76,0.12);
+  font-size: 0.95rem;
+  position: relative;
+}
+
+.lineage-item:last-child { border-bottom: none; }
+
+.lineage-num {
+  background: var(--crimson);
+  color: var(--gold-light);
+  min-width: 32px; height: 32px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem;
+  font-family: 'Amiri', serif;
+  border: 1px solid var(--gold-dark);
+  flex-shrink: 0;
+}
+
+.lineage-name { flex: 1; color: var(--text); line-height: 1.8; }
+.lineage-name.imam { color: var(--gold-light); font-weight: 700; }
+.lineage-name.wali { color: var(--gold); font-style: italic; }
+
+/* ─── QUOTE BOX ─── */
+.quote-box {
+  background: linear-gradient(135deg, rgba(139,26,26,0.15), rgba(201,168,76,0.05));
+  border: 1px solid var(--border);
+  border-right: 5px solid var(--crimson-light);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  font-family: var(--font-arabic);
+  font-size: 1.05rem;
+  line-height: 2;
+  color: var(--gold-light);
+}
+
+.arabic-text {
+  font-family: var(--font-arabic);
+  font-size: 1.4rem;
+  line-height: 2.2;
+  color: var(--gold-light);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/* ─── INFO CARD ─── */
+.info-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.info-card h4 {
+  color: var(--gold);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-arabic);
+}
+
+.info-row {
+  display: flex;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed rgba(201,168,76,0.1);
+  font-size: 0.9rem;
+}
+
+.info-row:last-child { border-bottom: none; }
+.info-label { color: var(--gold); min-width: 120px; flex-shrink: 0; }
+.info-val { color: var(--text); flex: 1; line-height: 1.8; }
+
+/* ─── TABLE ─── */
+.table-wrap { overflow-x: auto; margin: 1.5rem 0; border-radius: 6px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+thead { background: var(--crimson); }
+thead th { padding: 0.75rem 1rem; text-align: right; color: var(--gold-light); font-family: var(--font-arabic); }
+tbody tr { border-bottom: 1px solid var(--border); }
+tbody tr:nth-child(even) { background: rgba(201,168,76,0.03); }
+tbody tr:hover { background: var(--gold-glow); }
+tbody td { padding: 0.6rem 1rem; color: var(--text); line-height: 1.8; }
+
+/* ─── DIVIDER ─── */
+.divider {
+  text-align: center;
+  margin: 2.5rem 0;
+  color: var(--gold-dark);
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+}
+
+/* ─── TOPIC LIST ─── */
+.topic-list { list-style: none; padding: 0; }
+.topic-list li {
+  padding: 0.4rem 1.5rem;
+  position: relative;
+  font-size: 0.92rem;
+  line-height: 1.9;
+  border-bottom: 1px dashed rgba(201,168,76,0.1);
+}
+.topic-list li::before {
+  content: '◆';
+  position: absolute;
+  right: 0;
+  color: var(--crimson-light);
+  font-size: 0.6rem;
+  top: 0.7rem;
+}
+
+/* ─── BACK TO TOP ─── */
+#topBtn {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  background: var(--crimson);
+  color: var(--gold-light);
+  border: 1px solid var(--gold-dark);
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: all 0.2s;
+}
+#topBtn:hover { background: var(--gold-dark); }
+#topBtn.show { display: flex; }
+
+/* ─── FOOTER ─── */
+footer {
+  background: var(--dark);
+  border-top: 2px solid var(--gold-dark);
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  line-height: 2;
+}
+
+footer .footer-title {
+  font-family: var(--font-arabic);
+  font-size: 1.2rem;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+/* ─── MOBILE ─── */
+@media (max-width: 768px) {
+  .wrapper { flex-direction: column; }
+  .sidebar { width: 100%; height: auto; position: relative; }
+  .main { max-width: 100%; }
+  .hero { padding: 2rem 1rem; }
+  .content-area { padding: 1rem; }
+  .book-info { margin: 1rem; }
+}
+
+/* ─── PRINT ─── */
+@media print {
+  .sidebar, #topBtn { display: none; }
+  .main { max-width: 100%; }
+  body { background: white; color: black; }
+}
+
+/* ─── ANIMATIONS ─── */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.section { animation: fadeIn 0.4s ease both; }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+<!-- ═══ SIDEBAR ═══ -->
+<nav class="sidebar">
+  <div class="sidebar-header">
+    <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ</div>
+    <h1>گلزارِ جلالیہ</h1>
+    <p>ساداتِ نقوی البخاری</p>
+  </div>
+  <div class="sidebar-search">
+    <input type="text" id="searchInput" placeholder="تلاش کریں..." oninput="searchContent(this.value)">
+  </div>
+  <ul class="nav-list" id="navList">
+    <li class="nav-item"><a href="#intro">تعارف و مقصدِ تحریر</a></li>
+    <li class="nav-item chapter-head"><a href="#shajra-adam">شجرۂ نسب — آدم تا عبدالمطلب</a></li>
+    <li class="nav-item"><a href="#abdulmuttalib">حضرت عبدالمطلب علیہ السلام</a></li>
+    <li class="nav-item"><a href="#abdullah">حضرت عبداللہ علیہ السلام</a></li>
+    <li class="nav-item"><a href="#amina">حضرت بی بی آمنہ سلامُ اللہ علیہا</a></li>
+    <li class="nav-item"><a href="#rasool">خاتمُ النبیین ﷺ</a></li>
+    <li class="nav-item"><a href="#fatima">حضرت بی بی فاطمہ الزہراء سلامُ اللہ علیہا</a></li>
+    <li class="nav-item"><a href="#abutalib">حضرت سید ابوطالب علیہ السلام</a></li>
+    <li class="nav-item chapter-head"><a href="#imam-ali">امام علی علیہ السلام</a></li>
+    <li class="nav-item"><a href="#imam-hasan">امام حسن علیہ السلام</a></li>
+    <li class="nav-item"><a href="#imam-hussain">امام حسین علیہ السلام</a></li>
+    <li class="nav-item"><a href="#imam-sajjad">امام زین العابدین علیہ السلام</a></li>
+    <li class="nav-item"><a href="#imam-baqir">امام محمد باقر علیہ السلام</a></li>
+    <li class="nav-item"><a href="#imam-sadiq">امام جعفر صادق علیہ السلام</a></li>
+    <li class="nav-item"><a href="#imam-kazim">امام موسیٰ کاظم علیہ السلام</a></li>
+    <li class="nav-item"><a href="#imam-raza">امام علی رضا علیہ السلام</a></li>
+    <li class="nav-item"><a href="#imam-taqi">امام محمد تقی علیہ السلام</a></li>
+    <li class="nav-item"><a href="#imam-naqi">امام علی نقی علیہ السلام</a></li>
+    <li class="nav-item"><a href="#imam-askari">امام حسن عسکری علیہ السلام</a></li>
+    <li class="nav-item chapter-head"><a href="#jafar-sani">سید جعفر ثانی</a></li>
+    <li class="nav-item"><a href="#ali-asghar-jafar">حضرت علی الاصغر بن جعفر</a></li>
+    <li class="nav-item"><a href="#syed-abdullah">حضرت سید عبداللہ</a></li>
+    <li class="nav-item chapter-head"><a href="#auliya">تذکرہ اولیاءِ کرام</a></li>
+    <li class="nav-item"><a href="#irfan">عرفانِ اثنا عشریِ اصولی</a></li>
+    <li class="nav-item"><a href="#ahmad-shah">حضرت سید احمد شاہ</a></li>
+    <li class="nav-item"><a href="#surkh-posh">حضرت سید جلال الدین سرخ پوش بخاری</a></li>
+    <li class="nav-item"><a href="#sultan-ahmed">حضرت سید سلطان احمد کبیر</a></li>
+    <li class="nav-item"><a href="#jahaniyan">مخدوم جہانیاں جہاں گشت</a></li>
+    <li class="nav-item"><a href="#nasiruddin">سید ناصرالدین محمود بخاری</a></li>
+    <li class="nav-item chapter-head"><a href="#safiuddin">سید صفی الدین</a></li>
+    <li class="nav-item"><a href="#jalauddin-lahori">سید جلال الدین حیدر لاہوری</a></li>
+    <li class="nav-item"><a href="#ilmuddin">سید علم الدین</a></li>
+    <li class="nav-item"><a href="#zainulabdeen">سید زین العابدین</a></li>
+    <li class="nav-item"><a href="#shah-nizam">سید شاہ نظام</a></li>
+    <li class="nav-item"><a href="#yar-shah">سید یار شاہ حیدر</a></li>
+    <li class="nav-item chapter-head"><a href="#ameer-ali">سید امیر علی شاہؒ</a></li>
+    <li class="nav-item"><a href="#shakir-ali">سید شاکر علی</a></li>
+    <li class="nav-item"><a href="#ashiq-ali">سید عاشق علی</a></li>
+    <li class="nav-item"><a href="#nafees-ali">سید نفیس علی</a></li>
+    <li class="nav-item"><a href="#hafeez-muhabbat">سید حفیظ علی و سید محبت علی</a></li>
+    <li class="nav-item"><a href="#muhabbat-aolad">سید محبت علی کی اولاد</a></li>
+    <li class="nav-item chapter-head"><a href="#naqvi-branches">ساداتِ نقوی کی شاخیں</a></li>
+    <li class="nav-item"><a href="#aqaid">عقائد اور شناخت</a></li>
+    <li class="nav-item"><a href="#references">حوالہ جات</a></li>
+  </ul>
+</nav>
+
+<!-- ═══ MAIN ═══ -->
+<main class="main">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="bismillah-hero">بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ</div>
+  <div class="durood">
+    اللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَآلِ مُحَمَّدٍ<br>
+    کَمَا صَلَّیْتَ عَلٰی اِبْرَاہِیْمَ وَآلِ اِبْرَاہِیْمَ اِنَّکَ حَمِیْدٌ مَّجِیْدٌ
+  </div>
+  <h1>گلزارِ جلالیہ</h1>
+  <div class="subtitle">
+    انسابِ ساداتِ نقوی البخاری الحسنی الحسینی آلِ نبی ﷺ، اولادِ علیؑ و فاطمہؑ<br>
+    وارثینِ سید امیر علی شاہؒ — اُوچ شریف، لاہور، فیروزآباد، آگرہ، حیدرآباد، کراچی
+  </div>
+  <div class="meta-badges">
+    <span class="badge">ساداتِ نقوی البخاری</span>
+    <span class="badge">آلِ امیر</span>
+    <span class="badge">آلِ نفیس</span>
+    <span class="badge">اثنا عشری</span>
+    <span class="badge">اُوچ شریف</span>
+    <span class="badge">جنوری ۲۰۲۶</span>
+  </div>
+</div>
+
+<!-- BOOK INFO -->
+<div class="book-info">
+  <div class="book-info-item">
+    <div class="label">نام کتاب</div>
+    <div class="val">گلزارِ جلالیہ</div>
+  </div>
+  <div class="book-info-item">
+    <div class="label">مؤلف</div>
+    <div class="val">سید سلیم رضا بخاری — شجرہ نویسِ مدینۃ السادات، اُوچ شریف</div>
+  </div>
+  <div class="book-info-item">
+    <div class="label">توثیق</div>
+    <div class="val">ڈاکٹر محمد اقبال چشتی — پیر ڈاکٹر سید فہیم رضا کاظمی چشتی اجمیری</div>
+  </div>
+  <div class="book-info-item">
+    <div class="label">پروف ریڈنگ</div>
+    <div class="val">سید شاہ زیب علی نقوی</div>
+  </div>
+  <div class="book-info-item">
+    <div class="label">بار اول</div>
+    <div class="val">جنوری ۲۰۲۶ — ۳۱۵ صفحات — قیمت ۱,۹۹۹ روپے</div>
+  </div>
+  <div class="book-info-item">
+    <div class="label">ناشر</div>
+    <div class="val">تہذیب انٹرنیشنل پبلیکیشنز — بہاولپور، لاہور، اسلام آباد</div>
+  </div>
+</div>
+
+<div class="content-area">
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- SECTION: INTRO -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="intro">
+  <h2 class="section-title">تعارف و مقصدِ تحریر</h2>
+
+  <p>اس کتاب کی تالیف کا مقصد ساداتِ کرام کے نسب اور ان کی تاریخ کو محفوظ رکھنا ہے۔ یہ کتاب ایک معزز خانوادۂ سادات کی تاریخ ہے۔ تاریخ اکثر ان نفوسِ قدسیہ کو نظرانداز کر دیتی ہے جو اپنی خاموشی، تقویٰ، خدمت، معرفتِ معصومینؑ اور روحانی عظمت میں وہ رفعتیں رکھتے ہیں جو دنیاوی سلطنتوں کے حکمرانوں کو بھی نصیب نہیں ہوتیں۔</p>
+
+  <p>یہ کتاب ایک ایسی ممتاز اور مخفی ہستی — <strong>سید امیر علی شاہ نقوی البخاریؒ</strong> — اور ان کی اولاد و نسل کی زندگی، وراثت، خدمات، اور نسبی و روحانی تسلسل کو تحریری قالب میں محفوظ کرنے کی ایک سنجیدہ کوشش ہے۔</p>
+
+  <div class="quote-box">
+    یہ تمام تسلسل صرف زبانی بیانیے پر مبنی نہیں بلکہ دونوں ممالک کے شہروں سے وابستگی رکھنے والے خاندان کے بزرگوں، کچھ پرانے نسخوں، درگاہی خطوط، سجادہ نشینوں کی شہادت، نایاب شجرہ نویسی، مدینۃ الاولیاء اوچ شریف، تاریخِ انوارِ سادات، مرآتِ جلالی جیسے صوفی متون، مغل و صفوی تاریخ اُوچ شریف و سیرتِ سرخ پوش بخاریؒ جیسے مصادر پر تحقیق کی بنیاد پر مدلل کیا گیا ہے۔
+  </div>
+
+  <p>یہ کتاب اُن نسلوں کے لیے — خاص طور پر نسلِ سید نفیس علی کے لیے — ایک چراغِ راہ ہے جنہوں نے اپنی دینی، نسبی اور روحانی جڑوں کو بھلا دیا۔ یہ کتاب نہ صرف اس سوال کا جواب دیتی ہے کہ ان کے آباء کون تھے، ان کی ولایت کی بنیاد کیا تھی، بلکہ ایک خاموش مگر درخشندہ ساداتِ خانوادے کی تاریخ، فیضان، قربانی، اور شناخت کو آئندہ نسلوں کے لیے محفوظ کرنے کی سعیِ مکمل ہے۔</p>
+
+  <h3 class="sub-title">فہرستِ عنوانات</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>صفحہ</th><th>عنوان</th><th>نمبر</th></tr></thead>
+      <tbody>
+        <tr><td>۱۳</td><td>تعارف و مقصدِ تحریر</td><td>۱</td></tr>
+        <tr><td>۱۵</td><td>شجرۂ نسب حضرت آدمؑ سے حضرت عبدالمطلبؑ تک</td><td>۲</td></tr>
+        <tr><td>۱۶</td><td>حضرت سید عبدالمطلب علیہ السلام</td><td>۳</td></tr>
+        <tr><td>۲۱</td><td>حضرت سید عبداللہ علیہ السلام</td><td>۴</td></tr>
+        <tr><td>۲۴</td><td>حضرت بی بی پاک آمنہ سلامُ اللہ علیہا</td><td>۵</td></tr>
+        <tr><td>۲۸</td><td>خاتمُ النبیین حضرت محمد مصطفیٰ ﷺ</td><td>۶</td></tr>
+        <tr><td>۳۲</td><td>حضرت بی بی فاطمہ الزہراء سلامُ اللہ علیہا</td><td>۷</td></tr>
+        <tr><td>۳۸</td><td>امیر المومنین حضرت امام مولا علی علیہ السلام</td><td>۱۰</td></tr>
+        <tr><td>۵۹</td><td>حضرت امام حسن بن علی علیہما السلام</td><td>۱۲</td></tr>
+        <tr><td>۷۱</td><td>حضرت امام حسین بن علی علیہما السلام — سید الشہداء</td><td>۱۵</td></tr>
+        <tr><td>۷۶</td><td>حضرت امام زین العابدین علیہ السلام</td><td>۱۶</td></tr>
+        <tr><td>۸۵</td><td>حضرت امام جعفر صادق علیہ السلام</td><td>۱۸</td></tr>
+        <tr><td>۱۰۲</td><td>حضرت امام علی نقی علیہ السلام</td><td>۲۲</td></tr>
+        <tr><td>۱۱۰</td><td>امام زادے سید جعفر ثانی بن علی النقیؑ</td><td>۲۴</td></tr>
+        <tr><td>۱۵۹</td><td>قطب کمال حضرت سید جلال الدین سرخ پوش بخاری</td><td>۳۴</td></tr>
+        <tr><td>۱۷۵</td><td>حضرت سید سلطان احمد کبیر</td><td>۳۵</td></tr>
+        <tr><td>۱۷۹</td><td>حضرت مخدوم جہانیاں جہاں گشت</td><td>۳۶</td></tr>
+        <tr><td>۲۱۰</td><td>سید امیر علی شاہؒ بن سید حیدر شاہؒ</td><td>۵۴</td></tr>
+        <tr><td>۲۳۱</td><td>سید حفیظ علی و سید محبت علی</td><td>۵۸</td></tr>
+        <tr><td>۲۴۴</td><td>سید محبت علی کی اولاد — نسل در نسل تفصیل</td><td>۷۲</td></tr>
+        <tr><td>۲۸۷</td><td>برِّ صغیر میں ساداتِ نقوی کی مستند شاخیں</td><td>۱۰۸</td></tr>
+        <tr><td>۲۹۳</td><td>شجرہ نسب</td><td>۱۱۰</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- SECTION: SHAJRA ADAM TO ABDULMUTTALIB -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="shajra-adam">
+  <h2 class="section-title">شجرۂ نسب — حضرت آدمؑ سے حضرت عبدالمطلبؑ تک</h2>
+
+  <div class="lineage-chain">
+    <div class="lineage-item"><div class="lineage-num">۱</div><div class="lineage-name imam">حضرت آدم علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲</div><div class="lineage-name">شیث علیہ السلام (فرزندِ آدمؑ)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳</div><div class="lineage-name">انوش</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴</div><div class="lineage-name">قینان</div></div>
+    <div class="lineage-item"><div class="lineage-num">۵</div><div class="lineage-name">مہلائیل</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶</div><div class="lineage-name">یرد</div></div>
+    <div class="lineage-item"><div class="lineage-num">۷</div><div class="lineage-name imam">اخنوخ — حضرت ادریس علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۸</div><div class="lineage-name">متوشلخ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۹</div><div class="lineage-name">لامک</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۰</div><div class="lineage-name imam">حضرت نوح علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۱</div><div class="lineage-name">سام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۲</div><div class="lineage-name">ارفکشاد</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۳</div><div class="lineage-name">شالخ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۴</div><div class="lineage-name">عابر</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۵</div><div class="lineage-name">فالج</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۶</div><div class="lineage-name">رعو</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۷</div><div class="lineage-name">سروج</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۸</div><div class="lineage-name">ناحور</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۹</div><div class="lineage-name">تارخ (آزر)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲۰</div><div class="lineage-name imam">حضرت ابراہیم علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲۱</div><div class="lineage-name imam">حضرت اسماعیل علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲۲–۵۴</div><div class="lineage-name">بشیرلی ← سمیر ← حمران ← الدریا ← صید ← عقبر ← عشی ← ماضی ← ناخش ← جام ← طائح ← یدلاف ← بلداس ← حرا ← قیدار ← عزام ← عوض ← مزری ← کی ← زارح ← ناحت ← مقصری ← مقصری ← ابہام ← اقتاد ← عیمر ← دیشان ← عیضنی ← ارغہ ← شحن ← سنجون ← بشرلی ← ال ← عدنان</div></div>
+    <div class="lineage-item"><div class="lineage-num">۵۵</div><div class="lineage-name">معد بن عدنان</div></div>
+    <div class="lineage-item"><div class="lineage-num">۵۶</div><div class="lineage-name">نزار</div></div>
+    <div class="lineage-item"><div class="lineage-num">۵۷</div><div class="lineage-name">مضر</div></div>
+    <div class="lineage-item"><div class="lineage-num">۵۸</div><div class="lineage-name">الیاس</div></div>
+    <div class="lineage-item"><div class="lineage-num">۵۹</div><div class="lineage-name">مدرکہ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶۰</div><div class="lineage-name">خزیمہ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶۱</div><div class="lineage-name">کنانہ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶۲</div><div class="lineage-name">نضر</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶۳</div><div class="lineage-name">مالک</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶۴</div><div class="lineage-name">فہر (قریش) — بانیٔ قریشی شناخت</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶۵</div><div class="lineage-name">غالب</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶۶</div><div class="lineage-name">لؤی</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶۷</div><div class="lineage-name">کعب</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶۸</div><div class="lineage-name">مرہ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶۹</div><div class="lineage-name">کلاب</div></div>
+    <div class="lineage-item"><div class="lineage-num">۷۰</div><div class="lineage-name">قصی — منظمِ قریش، سرداری مکہ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۷۱</div><div class="lineage-name">عبد مناف</div></div>
+    <div class="lineage-item"><div class="lineage-num">۷۲</div><div class="lineage-name">ہاشم — بانیٔ بنو ہاشم</div></div>
+    <div class="lineage-item"><div class="lineage-num">۷۳</div><div class="lineage-name imam">حضرت عبدالمطلب (شیبہ) علیہ السلام</div></div>
+  </div>
+
+  <div class="info-card">
+    <h4>حوالہ جات</h4>
+    <p style="font-size:0.88rem; color:var(--text-dim);">القرآن الکریم، تفسیر ابنِ کثیر، تاریخ الرسل والملوک (امام طبری)، البدایہ والنہایہ (ابنِ کثیر)، جمہرة انساب العرب (ابنِ حزم)، السیرۃ النبویۃ (ابنِ ہشام)، انساب الاشراف (البلاذری)، الطبقات الکبریٰ (ابنِ سعد)</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ -->
+<!-- ABDULMUTTALIB -->
+<!-- ══════════════════════════════════════════════════ -->
+<section class="section" id="abdulmuttalib">
+  <h2 class="section-title">حضرت سید عبدالمطلب علیہ السلام</h2>
+  <p style="color:var(--gold); font-size:0.85rem;">سیدُ البطحاء، شیخُ الحرم، ساقیُ الحاج، مطعمُ الحاج، مالکِ زمزم، حافرِ زمزم، رئیسِ قریش، امیرِ مکہ، کافلُ الیتیم، وارثِ سنتِ ابراہیمی، موحد، حنیف علی ملتِ ابراہیم</p>
+
+  <div class="info-card">
+    <h4>مختصر تعارف</h4>
+    <div class="info-row"><div class="info-label">اصل نام</div><div class="info-val">شیبہ</div></div>
+    <div class="info-row"><div class="info-label">مشہور نام</div><div class="info-val">عبدالمطلب</div></div>
+    <div class="info-row"><div class="info-label">کنیت</div><div class="info-val">ابو الحارث</div></div>
+    <div class="info-row"><div class="info-label">پیدائش</div><div class="info-val">یثرب (مدینہ منورہ) — عامِ فیل سے تقریباً پچاس سال قبل</div></div>
+    <div class="info-row"><div class="info-label">والد</div><div class="info-val">حضرت ہاشم بن عبد مناف علیہ السلام</div></div>
+    <div class="info-row"><div class="info-label">والدہ</div><div class="info-val">سلمیٰ بنت عمرو — بنو نجار، یثرب</div></div>
+    <div class="info-row"><div class="info-label">وفات</div><div class="info-val">مکہ مکرمہ — عمر تقریباً اسی برس — جنت المعلیٰ</div></div>
+  </div>
+
+  <p>حضرت عبدالمطلب علیہ السلام کی ابتدائی پرورش یثرب میں ہوئی، جہاں آپ کے نانا رہتے تھے۔ بعد ازاں آپ کے چچا مطّلب بن عبد مناف آپ کو مکہ لے آئے۔ لوگوں نے غلط فہمی سے انہیں عبدالمطلب کہنا شروع کیا جو تاریخ میں مشہور ہو گیا۔</p>
+
+  <h3 class="sub-title">اہم تاریخی واقعات</h3>
+  <ul class="topic-list">
+    <li>زمزم کی دوبارہ دریافت — خواب کے ذریعے رہنمائی اور بنو امیہ کی مخالفت کے باوجود استقامت</li>
+    <li>اصحابِ فیل کے موقع پر ابرہہ کے سامنے کعبہ کا دفاع</li>
+    <li>حضرت عبداللہ علیہ السلام کی نذر اور سو اونٹوں کا فدیہ</li>
+    <li>رسول اکرم ﷺ کی کفالت اور حضرت ابوطالبؑ کے سپرد کرنا</li>
+  </ul>
+
+  <h3 class="sub-title">اولاد (بیٹے)</h3>
+  <p>حضرت الحارثؓ، حضرت زبیرؓ، حضرت ابو طالبؑ (والدِ مولا علیؑ)، حضرت عبداللہؑ (والدِ رسول اکرم ﷺ)، حضرت حمزہؓ (سیدُ الشہداء)، حضرت عباسؓ، ابو لہب، حضرت ضرارؓ، حضرت مقومؓ، حضرت حجلؓ۔</p>
+</section>
+
+<div class="divider">❖ ❖ ❖</div>
+
+<!-- RASOOL -->
+<section class="section" id="rasool">
+  <h2 class="section-title">خاتمُ النبیین حضرت محمد مصطفیٰ ﷺ</h2>
+
+  <div class="arabic-text">اَللّٰهُمَّ صَلِّ عَلٰى مُحَمَّدٍ وَّاٰلِ مُحَمَّدٍؐ</div>
+
+  <p>حضرت خاتم الانبیاء، سیدالمرسلین، شفیع المذنبین، رحمۃٌ للعالمین، محمد مصطفیٰ احمد مجتبیٰ صلی اللہ علیہ وآلہ وسلم اللہ تعالیٰ کے سب سے محبوب اور مکرم ترین بندے اور رسول ہیں۔ آپ ﷺ کے لیے کائنات کو تخلیق کیا گیا۔</p>
+
+  <div class="info-card">
+    <h4>حیاتِ مبارکہ کے اہم مراحل</h4>
+    <div class="info-row"><div class="info-label">پیدائش</div><div class="info-val">ربیع الاول، عامِ الفیل — مکہ مکرمہ</div></div>
+    <div class="info-row"><div class="info-label">والدین</div><div class="info-val">حضرت عبداللہؑ (والد) — حضرت آمنہؑ (والدہ)</div></div>
+    <div class="info-row"><div class="info-label">کفالت</div><div class="info-val">۶ سال تک والدہ — ۸ سال تک دادا — پھر چچا ابوطالبؑ</div></div>
+    <div class="info-row"><div class="info-label">نبوت</div><div class="info-val">چالیس سال کی عمر میں غارِ حرا میں وحی</div></div>
+    <div class="info-row"><div class="info-label">وصال</div><div class="info-val">۱۲ ربیع الاول ۱۱ ہجری — مدینہ منورہ</div></div>
+    <div class="info-row"><div class="info-label">عمر مبارک</div><div class="info-val">۶۳ سال</div></div>
+  </div>
+
+  <h3 class="sub-title">اولادِ رسول ﷺ</h3>
+  <p>قاسمؑ، عبداللہؑ (طیب/طاہر)، ابراہیمؑ، <strong>بی بی فاطمہ الزہراء سلامُ اللہ علیہا</strong>۔</p>
+</section>
+
+<!-- FATIMA -->
+<section class="section" id="fatima">
+  <h2 class="section-title">حضرت بی بی فاطمہ الزہراء سیدہُ نساءِ العالمین سلامُ اللہ علیہا</h2>
+  <p style="color:var(--gold); font-size:0.82rem;">بنتِ رسولِ خدا ﷺ، سیدہُ نساءِ اہلِ جنت، امُّ ابیہا، صدیقہ، طاہرہ، مطہرہ، بتول، زکیہ، معصومہ، مظلومہ، کوثرِ نبوی، زوجۂ امیرالمؤمنین علیؑ، مادرِ حسنینؑ</p>
+
+  <p>حضرت بی بی فاطمہ الزہرا سلامُ اللہ علیہا، رسولِ اکرم ﷺ کی وہ واحد صاحبزادی ہیں جنہیں اللہ تعالیٰ نے نبوت، امامت اور ولایت کے تسلسل کا مرکز بنایا۔ نبی ﷺ نے فرمایا: <em>فاطمہ میرے جگر کا ٹکڑا ہے، جس نے اسے اذیت دی اس نے مجھے اذیت دی۔</em></p>
+
+  <h3 class="sub-title">اولادِ فاطمہ سلامُ اللہ علیہا</h3>
+  <ul class="topic-list">
+    <li>امام حسن مجتبیٰ علیہ السلام — دوسرے امام</li>
+    <li>امام حسین علیہ السلام — سید الشہداء — تیسرے امام</li>
+    <li>محسن علیہ السلام</li>
+    <li>حضرت زینب کبریٰ سلامُ اللہ علیہا</li>
+    <li>حضرت ام کلثوم سلامُ اللہ علیہا</li>
+  </ul>
+</section>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<!-- IMAM ALI -->
+<section class="section" id="imam-ali">
+  <h2 class="section-title">امیر المومنین حضرت سید امام مولا علی علیہ السلام</h2>
+  <p style="color:var(--gold); font-size:0.82rem;">امیرُالمؤمنین، وصیِّ رسولِ خدا ﷺ، نفسِ رسول ﷺ، بابُ مدینۃِ العلم، اسدُ اللہِ الغالب، حیدرِ کرار، مرتضیٰ، ولیُّ اللہ، امامُ المتقین، اوّلُ المؤمنین، زوجِ بتولؑ، والدِ حسنینؑ</p>
+
+  <p>حضرت علی بن ابی طالب کرم اللہ وجہہ و علیہ السلام، امیر المؤمنین، وصیّ رسول، امام المتقین، باب مدینۃ العلم، اور اہل بیت علیہم السلام کے سرداروں میں سے ہیں۔ آپ کی ولادت ۱۳ رجب، ۳۰ عام الفیل کو کعبہ کے اندر ہوئی۔</p>
+
+  <div class="quote-box">
+    <span style="color:var(--gold-light);">حدیثِ غدیر:</span><br>
+    <span class="arabic-text" style="font-size:1.2rem;">مَن کُنتُ مَولاهُ فَهذا عَلِيٌّ مَولاهُ</span>
+    <br>اللّٰهُمَّ وَالِ مَن وَالَاهُ، وَعَادِ مَن عَادَاهُ، وَانصُر مَن نَصَرَهُ، وَاخذُل مَن خَذَلَهُ
+  </div>
+
+  <div class="info-card">
+    <h4>شہادت</h4>
+    <div class="info-row"><div class="info-label">تاریخ</div><div class="info-val">۱۹ رمضان ۴۰ ہجری — قاتلانہ حملہ — ۲۱ رمضان شہادت</div></div>
+    <div class="info-row"><div class="info-label">مدفن</div><div class="info-val">نجف اشرف، عراق</div></div>
+  </div>
+</section>
+
+<!-- IMAMS CHAIN -->
+<section class="section" id="imam-hasan">
+  <h2 class="section-title">سلسلۂ ائمہ طاہرینؑ</h2>
+
+  <h3 class="chapter-title" id="imam-hasan">امام حسن مجتبیٰ علیہ السلام — دوسرے امام</h3>
+  <p>آپ کی ولادت ۱۵ رمضان ۳ ہجری کو مدینہ منورہ میں ہوئی۔ آپ نے صلح کے ذریعے امتِ مسلمہ کو خانہ جنگی سے بچایا۔ شہادت ۲۸ صفر ۵۰ ہجری — زہر کے ذریعے — مدفن جنت البقیع۔</p>
+
+  <h3 class="chapter-title" id="imam-hussain">امام حسین علیہ السلام — سید الشہداء — تیسرے امام</h3>
+  <p>آپ کی ولادت ۳ شعبان ۴ ہجری کو مدینہ میں ہوئی۔ ۱۰ محرم ۶۱ ہجری کو کربلا میں ۷۲ جانثاروں کے ساتھ شہادت پائی۔ آپ نے فرمایا:</p>
+  <div class="quote-box">مجھ جیسا یزید جیسے شخص کی بیعت نہیں کر سکتا۔</div>
+
+  <h3 class="chapter-title" id="imam-sajjad">امام علی زین العابدین علیہ السلام — چوتھے امام</h3>
+  <div class="info-card">
+    <h4>مختصر احوال</h4>
+    <div class="info-row"><div class="info-label">ولادت</div><div class="info-val">۵ شعبان ۳۸ ہجری — مدینہ</div></div>
+    <div class="info-row"><div class="info-label">القاب</div><div class="info-val">سجاد، زین العابدین، سیدُ الساجدین</div></div>
+    <div class="info-row"><div class="info-label">خدمت</div><div class="info-val">صحیفۂ سجادیہ — رسالۃ الحقوق</div></div>
+    <div class="info-row"><div class="info-label">شہادت</div><div class="info-val">۲۵ محرم ۹۵ ہجری — جنت البقیع</div></div>
+  </div>
+
+  <h3 class="chapter-title" id="imam-baqir">امام محمد باقر علیہ السلام — پانچویں امام</h3>
+  <p>آپ کا لقب باقر العلوم ہے — علم کو شق کرنے والے۔ آپ نے اہلِ بیتؑ کی فقہ کو باقاعدہ اصولی شکل دی۔ شہادت ۷ ذی الحجہ ۱۱۴ ہجری — مدینہ۔</p>
+
+  <h3 class="chapter-title" id="imam-sadiq">امام جعفر صادق علیہ السلام — چھٹے امام</h3>
+  <p>آپ نے فقہِ جعفری کو منظم کیا اور ۴۰۰۰ سے زائد شاگردوں کو فیض پہنچایا۔ شہادت ۲۵ شوال ۱۴۸ ہجری — مدینہ۔</p>
+
+  <h3 class="chapter-title" id="imam-kazim">امام موسیٰ کاظم علیہ السلام — ساتویں امام</h3>
+  <p>القاب: الکاظم، بابُ الحوائج۔ آپ نے قید میں بھی علم و عبادت جاری رکھا۔ شہادت ۲۵ رجب ۱۸۳ ہجری — بغداد — مدفن کاظمین شریفین۔</p>
+
+  <h3 class="chapter-title" id="imam-raza">امام علی رضا علیہ السلام — آٹھویں امام</h3>
+  <p>آپ کا لقب امامِ ضامن اور عالمِ آلِ محمدؐ ہے۔ مامون عباسی نے ولی عہد بنایا لیکن بالآخر زہر سے شہید کیا۔ شہادت ۱۷ صفر ۲۰۳ ہجری — مدفن مشہد مقدس، ایران۔</p>
+
+  <h3 class="chapter-title" id="imam-taqi">امام محمد تقی الجواد علیہ السلام — نویں امام</h3>
+  <p>لقب الجواد (سب سے زیادہ سخی)۔ کم ترین عمر میں امامت کا آغاز — عمر مبارک صرف ۲۵ سال۔ مدفن کاظمین، بغداد۔</p>
+
+  <h3 class="chapter-title" id="imam-naqi">امام علی نقی الہادی علیہ السلام — دسویں امام</h3>
+  <p style="color: var(--gold);">⬅ یہی وہ امامِ بزرگوار ہیں جن کی نسلِ طیبہ سے ساداتِ نقوی کا سلسلہ چلا۔</p>
+  <div class="info-card">
+    <h4>امام علی النقی علیہ السلام</h4>
+    <div class="info-row"><div class="info-label">ولادت</div><div class="info-val">۱۵ ذی الحجہ ۲۱۲ ہجری — مدینہ</div></div>
+    <div class="info-row"><div class="info-label">القاب</div><div class="info-val">الہادی، النقی، فقیہُ العسکر، نورِ سامرہ</div></div>
+    <div class="info-row"><div class="info-label">خدمت</div><div class="info-val">زیارتِ جامعہ کبیرہ — وکالت کا منظم نظام</div></div>
+    <div class="info-row"><div class="info-label">شہادت</div><div class="info-val">۳ رجب ۲۵۴ ہجری — مدفن سامرہ، عراق</div></div>
+  </div>
+
+  <h3 class="chapter-title" id="imam-askari">امام حسن عسکری علیہ السلام — گیارہویں امام</h3>
+  <p>آپ والدِ امامِ مہدیؑ ہیں۔ شہادت ۸ ربیع الاول ۲۶۰ ہجری — مدفن سامرہ۔ آپ ہی سے غیبتِ صغریٰ کا آغاز ہوا۔</p>
+</section>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<!-- JAFAR SANI -->
+<section class="section" id="jafar-sani">
+  <h2 class="section-title">امام زادے سید جعفر ثانی بن علی النقیؑ</h2>
+  <p style="color:var(--text-dim); font-size:0.85rem;">الزکی، جعفر کذّاب، جعفر التوّاب — پیدائش ۲۲۶ھ — وفات ۲۷۱ھ — مدفن سامرا</p>
+
+  <p>جعفر بن علی النقی علیہ السلام، امام علی النقی علیہ السلام کے فرزند اور امام حسن عسکری علیہ السلام کے بھائی تھے۔ انہوں نے امام حسن عسکری علیہ السلام کی شہادت کے بعد امامت کا دعویٰ کیا لیکن اہلِ تشیع نے اسے رد کیا۔ بعد ازاں روایات میں ان کی توبہ کا ذکر ملتا ہے۔</p>
+
+  <p>ان کی اولاد نے وقت کے ساتھ اثنا عشری شیعہ عقائد کو قبول کیا اور اہل بیتؑ کی تعلیمات کو اپنایا۔ انہی کی نسل سے <strong>ساداتِ نقوی بخاری</strong> کا عظیم سلسلہ چلا۔</p>
+
+  <h3 class="sub-title">اولادِ سید جعفر ثانی</h3>
+  <div class="lineage-chain">
+    <div class="lineage-item"><div class="lineage-num">۱</div><div class="lineage-name wali">سید ابو الحسن علی الاصغر رحمۃ اللہ علیہ ← <strong>براہِ راست نسلِ ساداتِ نقوی بخاری</strong></div></div>
+    <div class="lineage-item"><div class="lineage-num">۲</div><div class="lineage-name">سید عبدالعزیز</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳</div><div class="lineage-name">سید یحییٰ صوفی</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴</div><div class="lineage-name">سید ابو القاسم طاہر</div></div>
+    <div class="lineage-item"><div class="lineage-num">۵–۱۸</div><div class="lineage-name">سید اسماعیل، سید ادریس، سید عیسیٰ، سید ہارون، سید محسن، سید عبداللہ، سید موسیٰ، سید ابو جعفر محمد، سید عباس، سید عبیداللہ، سید ابراہیم، سید ابو محمد حسن، سید احمد، سید اسحاق</div></div>
+  </div>
+</section>
+
+<!-- ALI ASGHAR -->
+<section class="section" id="ali-asghar-jafar">
+  <h2 class="section-title">حضرت علی الاصغر بن جعفر الزکی علیہ الرحمہ</h2>
+  <p>آپ حضرت جعفر الزکی بن امام علی نقی علیہ السلام کے فرزند تھے۔ کتبِ انساب کے مطابق آپ کی کنیت ابو الحسن تھی۔ آپ کی نسل سے سادات بخاری، نقوی سادات کے سلسلے چلے اور بعد میں حضرت سید جلال الدین سرخ پوش بخاریؒ جیسے عظیم اولیاء پیدا ہوئے۔</p>
+
+  <h3 class="sub-title">اولاد و نسل</h3>
+  <ul class="topic-list">
+    <li>سید محمد نقوی</li>
+    <li>سید علی مختار</li>
+    <li>سید جعفر نقوی</li>
+    <li>سید ابراہیم نقوی</li>
+    <li>سید اسماعیل نقوی</li>
+    <li>سید حسن</li>
+    <li>سید حسین نقوی</li>
+    <li>سید حمزہ</li>
+    <li><strong>سید عبداللہ ادریس بغدادی نقوی ← سلسلۂ ساداتِ نقوی بخاری</strong></li>
+  </ul>
+</section>
+
+<!-- SYED ABDULLAH -->
+<section class="section" id="syed-abdullah">
+  <h2 class="section-title">حضرت سید عبداللہ بن علی الاصغر علیہ الرحمہ</h2>
+  <p>آپ کی نسل سے بعد کے بزرگوں میں سید احمد شاہ، سید محمود، سید محمد بخاری، اور آخرکار حضرت سید ابو المؤید علی بخاری جیسے اکابر پیدا ہوئے جن کی اولاد سے حضرت سید جلال الدین سرخ پوش بخاریؒ پیدا ہوئے۔</p>
+
+  <div class="lineage-chain">
+    <div class="lineage-item"><div class="lineage-num">۱</div><div class="lineage-name">سید ابو یوسف احمد بغدادی نقوی</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲</div><div class="lineage-name">سید محمود اصغر بخاری</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳</div><div class="lineage-name">سید محمد ابو الفتح</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴</div><div class="lineage-name">سید جعفر ابو تراب</div></div>
+    <div class="lineage-item"><div class="lineage-num">۵</div><div class="lineage-name">سید علی المعید</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶</div><div class="lineage-name wali">حضرت سید جلال الدین حیدر سرخ پوش بخاری رحمۃ اللہ علیہ</div></div>
+  </div>
+</section>
+
+<div class="divider">❖ ❖ ❖</div>
+
+<!-- AULIYA -->
+<section class="section" id="auliya">
+  <h2 class="section-title">تذکرہ اولیاءِ کرام و مشائخِ طریقت</h2>
+
+  <!-- SURKH POSH -->
+  <h3 class="chapter-title" id="surkh-posh">قطب کمال — حضرت سید جلال الدین حیدر سرخ پوش بخاری رحمۃ اللہ علیہ</h3>
+  <p style="color:var(--gold); font-size:0.82rem;">سلطان الاولیاء، قطب الاقطاب، سید الاولیا، شیر شاہ، جلال گنج — اُوچ شریف</p>
+
+  <div class="info-card">
+    <h4>مختصر احوال</h4>
+    <div class="info-row"><div class="info-label">ولادت</div><div class="info-val">۵ ذوالحجہ ۵۹۵ ہجری (۱۱۹۹ء) — بخارا</div></div>
+    <div class="info-row"><div class="info-label">والد</div><div class="info-val">سید علی المعید</div></div>
+    <div class="info-row"><div class="info-label">سلسلہ</div><div class="info-val">سہروردیہ — سلسلۂ جلالیہ کے بانی</div></div>
+    <div class="info-row"><div class="info-label">وصال</div><div class="info-val">۱۹ جمادی الاول ۶۹۰ ہجری (۱۲۹۱ء) — عمر ۹۵ سال</div></div>
+    <div class="info-row"><div class="info-label">مزار</div><div class="info-val">اُوچ شریف، پنجاب — UNESCO ورثے کی فہرست میں</div></div>
+  </div>
+
+  <p>حضرت سید جلال الدین سرخ پوش بخاری رحمۃ اللہ علیہ نہ صرف نسباً امام حسین علیہ السلام کی اولاد میں سے تھے بلکہ فکری، روحانی اور عملی طور پر بھی اہلِ بیتِ اطہار سے گہرا تعلق رکھتے تھے۔ آپ نے سندھ، پنجاب اور ہند میں لاکھوں لوگوں کو اسلام میں داخل کیا۔</p>
+
+  <h3 class="sub-title">اولاد</h3>
+  <ul class="topic-list">
+    <li>سید جعفر نقوی بخاری</li>
+    <li><strong>سید سلطان احمد کبیر نقوی بخاری ← براہِ راست نسل</strong></li>
+    <li>سید بہاؤالدین معصوم</li>
+    <li>سید صدرالدین محمد غوث</li>
+  </ul>
+
+  <h3 class="sub-title">ہم عصر اولیاء (چار یار)</h3>
+  <ul class="topic-list">
+    <li>حضرت بابا فرید الدین گنج شکر رحمۃ اللہ علیہ</li>
+    <li>حضرت بہاء الدین زکریا ملتانی رحمۃ اللہ علیہ</li>
+    <li>حضرت سید عثمان مروندی المعروف لعل شہباز قلندر رحمۃ اللہ علیہ</li>
+    <li>حضرت سید جلال الدین سرخ پوش بخاری رحمۃ اللہ علیہ</li>
+  </ul>
+
+  <!-- SULTAN AHMED -->
+  <h3 class="chapter-title" id="sultan-ahmed">حضرت سید سلطان احمد کبیر رحمۃ اللہ علیہ</h3>
+  <p>آپ حضرت سید جلال الدین سرخ پوش بخاری رحمۃ اللہ علیہ کے فرزند اور ان کے روحانی جانشین تھے۔ آپ کا مزار دیویاں شریف میں ہے جو مرجعِ خلائق ہے۔</p>
+
+  <h3 class="sub-title">اولاد</h3>
+  <ul class="topic-list">
+    <li>سید علی سرمست نقوی بخاری</li>
+    <li>سید صدرالدین راجن قتال نقوی بخاری</li>
+    <li>سید شاہ حسن نقوی بخاری</li>
+    <li><strong>حضرت سید جلال الدین حسین جہانیاں جہاں گشت ← براہِ راست نسل</strong></li>
+  </ul>
+
+  <!-- JAHANIYAN -->
+  <h3 class="chapter-title" id="jahaniyan">حضرت سید جلال الدین حسین — مخدوم جہانیاں جہاں گشت رحمۃ اللہ علیہ</h3>
+  <p style="color:var(--gold); font-size:0.82rem;">شیخ الاسلام، سیاحِ عالم، مخدوم جہانیاں — اُوچ شریف</p>
+
+  <div class="info-card">
+    <h4>مختصر احوال</h4>
+    <div class="info-row"><div class="info-label">ولادت</div><div class="info-val">۱۴ شعبان ۷۰۷ ہجری (۱۳۰۸ء) — اُوچ شریف</div></div>
+    <div class="info-row"><div class="info-label">علمی</div><div class="info-val">۱۸۸ علوم پر عبور — ۳۶ بار حج</div></div>
+    <div class="info-row"><div class="info-label">سلسلہ</div><div class="info-val">سہروردیہ — قادریہ — چشتیہ — کبرویہ سے اجازت</div></div>
+    <div class="info-row"><div class="info-label">وصال</div><div class="info-val">۱۰ ذوالحجہ ۷۸۵ ہجری (۱۳۸۴ء) — اُوچ شریف</div></div>
+  </div>
+
+  <div class="quote-box">آپ نے فرمایا: جاہل صوفیوں سے بچو، وہ دین کے راہزن ہیں۔ علمِ لدنی کے لیے تقویٰ شرطِ اول ہے۔ ہر مسلمان پر علم، عمل سے پہلے لازم ہے۔</div>
+</section>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<!-- NASIRUDDIN -->
+<section class="section" id="nasiruddin">
+  <h2 class="section-title">حضرت سید ناصرالدین محمود بخاری نقوی — فرزندِ مخدوم جہانیاں</h2>
+  <p>آپ کا لقب نر ہے کیونکہ آپ کثیر الاولاد تھے۔ آپ کے ۲۷ فرزند تھے جن سے ہندوستان، پاکستان، افغانستان کے بے شمار سادات خاندان چلے۔</p>
+
+  <h3 class="sub-title">صاحبِ اولاد بیٹے (۱۴)</h3>
+  <ul class="topic-list">
+    <li>سید اسماعیل (وجیہ الدین باکروری)</li>
+    <li>سید شہاب الدین (قاضی القضاۃ ہند)</li>
+    <li>سید علم الدین</li>
+    <li>سید برہان الدین قطب العالم (احمد آباد گجرات)</li>
+    <li>مخدوم کبیر شمس الدین</li>
+    <li>سید بہاؤالدین اور دیگر ۸ فرزند</li>
+  </ul>
+</section>
+
+<!-- SAFIUDDIN -->
+<section class="section" id="safiuddin">
+  <h2 class="section-title">سید صفی الدینؒ بن سید نظام الدینؒ — سجادہ نشین اُوچ شریف</h2>
+
+  <p>حضرت سید صفی الدینؒ اُوچ شریف کے سجادہ نشین اور اپنے وقت کے ممتاز روحانی بزرگ شمار ہوتے تھے۔ ان کی قیادت خالصتاً اخلاقی وزن، روحانی وقار اور خاندانی اعتماد پر قائم تھی۔</p>
+
+  <h3 class="sub-title">اولاد</h3>
+  <ul class="topic-list">
+    <li><strong>حضرت سید جلال الدین حیدر لاہوری رحمۃ اللہ علیہ ← براہِ راست نسل</strong></li>
+    <li>حضرت سید محمد میراں موجِ دریا رحمۃ اللہ علیہ</li>
+    <li>سید راجو</li>
+  </ul>
+</section>
+
+<!-- LAHORI -->
+<section class="section" id="jalauddin-lahori">
+  <h2 class="section-title">حضرت سید جلال الدین حیدرؒ بن سید صفی الدینؒ — لاہوری</h2>
+  <p style="color:var(--gold); font-size:0.82rem;">المعروف سید سلطان جلال الدین حیدر سہروردی لاہوری</p>
+
+  <p>آپ ایک نہایت پاکیزہ کردار، باوقار اور اہلِ بیتِ اطہارؑ سے گہری عقیدت رکھنے والی شخصیت تھے۔ آپ نے دنیاوی جاہ و جلال سے مکمل کنارہ کشی اختیار کی۔ وصال ۱۰۱۶ ہجری — لاہور۔</p>
+
+  <div class="info-card">
+    <h4>اولاد</h4>
+    <div class="info-row"><div class="info-label">۱</div><div class="info-val">سید شہاب الدین نقوی بخاری</div></div>
+    <div class="info-row"><div class="info-label">۲</div><div class="info-val"><strong>سید علم الدین نقوی بخاری ← براہِ راست نسل</strong></div></div>
+    <div class="info-row"><div class="info-label">۳</div><div class="info-val">سید شجاع نقوی بخاری</div></div>
+    <div class="info-row"><div class="info-label">۴</div><div class="info-val">سید علی نقوی بخاری</div></div>
+    <div class="info-row"><div class="info-label">۵</div><div class="info-val">سید جعفر نقوی بخاری</div></div>
+  </div>
+</section>
+
+<!-- CHAIN ILMUDDIN TO AMEER ALI -->
+<section class="section" id="ilmuddin">
+  <h2 class="section-title">سلسلۂ نسب — سید علم الدین سے سید امیر علی شاہؒ تک</h2>
+
+  <div class="lineage-chain">
+    <div class="lineage-item"><div class="lineage-num">۱</div><div class="lineage-name wali" id="ilmuddin">سید علم الدینؒ بن سید جلال الدین حیدر لاہوریؒ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲</div><div class="lineage-name" id="zainulabdeen">سید زین العابدینؒ بن سید علم الدینؒ (Q139986263)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳</div><div class="lineage-name" id="shah-nizam">سید شاہ نظامؒ بن سید زین العابدینؒ (Q139986264)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴</div><div class="lineage-name" id="yar-shah">سید یار شاہ حیدرؒ بن سید شاہ نظامؒ (Q139986267) — اولاد: سید نبی شاہ، سید کبیر شاہ، <strong>سید جہانگیر شاہ</strong></div></div>
+    <div class="lineage-item"><div class="lineage-num">۵</div><div class="lineage-name">سید جہانگیر شاہؒ بن سید یار شاہ حیدرؒ (Q139986269) — اولاد: سید مالی شاہ، <strong>سید شمس الدین شاہ</strong></div></div>
+    <div class="lineage-item"><div class="lineage-num">۶</div><div class="lineage-name">سید شمس الدین شاہؒ بن سید جہانگیر شاہؒ (Q139986270) — اولاد: سید صدرالدین، <strong>سید شرف الدین</strong>، سید قطب الدین</div></div>
+    <div class="lineage-item"><div class="lineage-num">۷</div><div class="lineage-name">سید شرف الدین شاہؒ بن سید شمس الدین شاہؒ (Q139986271)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۸</div><div class="lineage-name">سید کبیر شاہؒ بن سید شرف الدین شاہؒ (Q139917917) — اولاد: سید قمرالدین، سید علم الدین، سید بدرالدین، <strong>سید قطب شاہ</strong>، سید رحمت شاہ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۹</div><div class="lineage-name">سید قطب شاہؒ بن سید کبیر شاہؒ (Q139917911)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۰</div><div class="lineage-name">سید حیدر شاہؒ بن سید قطب شاہؒ (Q139917836) — اولاد: ضامن شاہ، <strong>سید امیر علی شاہ</strong>، سید وزیر علی شاہ، سید سردار علی شاہ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۱</div><div class="lineage-name wali" id="ameer-ali">سید امیر علی شاہؒ بن سید حیدر شاہؒ (Q139917834) — نسّابہ و نقیبِ آلِ امیر</div></div>
+  </div>
+</section>
+
+<div class="divider">❖ ❖ ❖</div>
+
+<!-- AMEER ALI SHAH - DETAILED -->
+<section class="section" id="ameer-ali-detail">
+  <h2 class="section-title">سید امیر علی شاہؒ بن سید حیدر شاہؒ — جدِ آلِ امیر</h2>
+
+  <p>سید امیر علی شاہؒ وہ بزرگ ہیں جن سے آلِ امیر کا نسبتاً زیادہ مستند، مفصل اور محفوظ تاریخی و خاندانی ذکر شروع ہوتا ہے۔ آپ اپنے وقت کے ماہر حکیم اور صاحبِ روحانیت شخصیت کے طور پر معروف تھے۔</p>
+
+  <div class="info-card">
+    <h4>اولاد</h4>
+    <div class="info-row"><div class="info-label">۱</div><div class="info-val">سید بابا درویش (لاولد)</div></div>
+    <div class="info-row"><div class="info-label">۲</div><div class="info-val">سید علی (لاولد)</div></div>
+    <div class="info-row"><div class="info-label">۳</div><div class="info-val"><strong>سید شاکر علی شاہ فیروزآبادی ← براہِ راست نسل</strong></div></div>
+    <div class="info-row"><div class="info-label">۴</div><div class="info-val">سید ذاکر علی شاہ فیروزآبادی</div></div>
+  </div>
+
+  <!-- SHAKIR ALI -->
+  <h3 class="chapter-title" id="shakir-ali">سید شاکر علی شاہؒ بن سید امیر علی شاہؒ</h3>
+  <p>آپ نے فیروزآباد (اتر پردیش) میں تبلیغِ دین اور اہلِ بیت کی محبت کو عام کرنے کا کام جاری رکھا۔ آپ سلسلۂ جلالیہ اور چشتیہ سے وابستہ تھے۔ آپ کے خاص مرید و شاگرد حضرت حیدر علاؤالدین چشتیؒ تھے۔</p>
+
+  <!-- ASHIQ ALI -->
+  <h3 class="chapter-title" id="ashiq-ali">سید عاشق علیؒ بن سید شاکر علی شاہؒ</h3>
+  <p>آپ ایک سادہ، نہایت دین دار شخصیت کے حامل تھے جو ہمیشہ اہلِ بیت علیہم السلام کی تعلیمات سے جڑے رہے۔ آپ کی اولاد: ایک بیٹا <strong>سید نفیس علی</strong> اور ایک بیٹی (پھوپھی اماں)۔</p>
+
+  <!-- NAFEES ALI -->
+  <h3 class="chapter-title" id="nafees-ali">سید نفیس علی شاہؒ بن سید عاشق علی شاہؒ</h3>
+  <p>سید نفیس علی کی حیات مختصر مگر باوقار تھی۔ بدقسمتی سے فرقہ واریت کی بنیاد پر وہ اور ان کی اہلیہ دونوں شہید کر دیے گئے۔ ان کے کمسن بیٹے یتیم ہو گئے۔</p>
+
+  <div class="info-card">
+    <h4>اولاد</h4>
+    <div class="info-row"><div class="info-label">۱</div><div class="info-val">سید امجد علی (کراچی)</div></div>
+    <div class="info-row"><div class="info-label">۲</div><div class="info-val"><strong>حاجی سید حفیظ علی</strong></div></div>
+    <div class="info-row"><div class="info-label">۳</div><div class="info-val"><strong>سید محبت علی</strong></div></div>
+  </div>
+</section>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<!-- HAFEEZ AND MUHABBAT -->
+<section class="section" id="hafeez-muhabbat">
+  <h2 class="section-title">حاجی سید حفیظ علی و سید محبت علی بن سید نفیس علیؒ</h2>
+
+  <h3 class="sub-title">فیروزآباد سے آگرہ ہجرت</h3>
+  <p>سید نفیس علی کے انتقال کے بعد ان کی بہن (پھوپھی اماں) نے بچوں کو فرقہ واریت کے خطرے سے بچانے کے لیے راتوں رات فیروزآباد سے آگرہ ہجرت کی۔ بعد ازاں آگرہ کی ہنگ منڈی میں سکونت اختیار کی۔</p>
+
+  <div class="quote-box">پھوپھی اماں نے حضرت بی بی زینب سلامُ اللہ علیہا کی سنت پر عمل کرتے ہوئے نسلِ سادات کو ظلم و ستم سے محفوظ رکھنے کا فریضہ انجام دیا۔</div>
+
+  <h3 class="sub-title">تقسیمِ ہند اور ہجرتِ پاکستان</h3>
+  <p>تقسیمِ ہند کے دوران، آگرہ سے تقریباً ۱۵۰۰ سادات پر مشتمل قافلہ لاہور بارڈر سے بہاولپور ہوتے ہوئے حیدرآباد سندھ پہنچا۔ حیدرآباد کو اس لیے منتخب کیا کیونکہ یہاں حضرت مولا علیؑ کی قدم گاہ موجود ہے۔</p>
+
+  <h3 class="sub-title">پکا قلعہ میں دینی خدمات</h3>
+  <p>سید محبت علی نے پکا قلعہ گلی نمبر ۵ میں مسجد کی امامت سنبھالی۔ وہ فجر، تہجد اور دیگر نمازوں کی سختی سے پابندی کرتے تھے۔ اپنی کمائی میں سے روزانہ غریبوں میں تقسیم کرتے تھے۔</p>
+
+  <h3 class="sub-title">حاجی سید حفیظ علی — ازدواجی تفصیل</h3>
+  <div class="info-card">
+    <h4>ازواج و اولاد</h4>
+    <div class="info-row"><div class="info-label">پہلی زوجہ</div><div class="info-val">سیدہ قادری خاتون — بیٹا: <strong>سید قمر علی</strong> — چار بیٹیاں</div></div>
+    <div class="info-row"><div class="info-label">دوسری زوجہ</div><div class="info-val">سیدہ خورشید خاتون — ایک بیٹی: سیدہ سعیدہ</div></div>
+  </div>
+
+  <p>سیدہ سعیدہ بنتِ سید حفیظ علی کے شوہر سید صابر رضوی بن سید شریف رضوی لکھنوی تھے۔ ان کے تین بیٹے — <strong>سید اصغر رضوی</strong> (صدرِ انجمن)، <strong>سید اکبر رضوی</strong> (مشہور نوحہ خواں قدم گاہ مولا علیؑ، حیدرآباد)، اور <strong>سید حیدر رضوی</strong>۔</p>
+</section>
+
+<div class="divider">❖ ❖ ❖</div>
+
+<!-- MUHABBAT ALI AOLAD -->
+<section class="section" id="muhabbat-aolad">
+  <h2 class="section-title">سید محبت علی کی اولاد — نسل در نسل تفصیل</h2>
+
+  <div class="info-card">
+    <h4>ازواج</h4>
+    <div class="info-row"><div class="info-label">پہلی زوجہ</div><div class="info-val">سیدہ نادری خاتون — اولاد: سید امید علی، سید نصیر علی، سیدہ افسری، سیدہ فیروزا، سیدہ بلقیس</div></div>
+    <div class="info-row"><div class="info-label">دوسری زوجہ</div><div class="info-val">سیدہ منی خاتون — اولاد: سیدہ امینہ، سید شباب علی، سید نیاز علی، سید اعجاز علی، سیدہ روبینہ، سید جاوید علی</div></div>
+  </div>
+
+  <!-- OMEED ALI -->
+  <h3 class="chapter-title">سید امید علی بن سید محبت علی</h3>
+  <p>سید امید علی سب سے بڑے بیٹے تھے جنہوں نے پورے خاندان کی کفالت کی۔ انہوں نے پکا قلعہ کی جائیداد کا ۲۰ سال طویل مقدمہ جیتا۔ خاندان کا علمی، تاریخی، نسبی ذخیرہ انہی کے ذریعے منتقل ہوا۔</p>
+
+  <div class="info-card">
+    <h4>اولادِ سید امید علی</h4>
+    <div class="info-row"><div class="info-label">بیٹے</div><div class="info-val">سید قدیر علی نقوی، سید امیر علی نقوی، سید ماجد علی نقوی، سید ساجد علی نقوی، سید ذوہیب علی نقوی</div></div>
+    <div class="info-row"><div class="info-label">بیٹیاں</div><div class="info-val">سیدہ فریدہ، سیدہ فرحت، سیدہ شبنم، سیدہ کوثر، سیدہ ندا</div></div>
+  </div>
+
+  <!-- QADEER ALI AND SONS -->
+  <h3 class="chapter-title">سید قدیر علی نقوی (Q139986327) بن سید امید علی</h3>
+  <div class="info-card">
+    <h4>چار صاحبزادے</h4>
+    <div class="info-row"><div class="info-label">۱</div><div class="info-val">سید شاہ زیب علی نقوی (Q139986330) — ماہرِ انساب و مصنف</div></div>
+    <div class="info-row"><div class="info-label">۲</div><div class="info-val">حافظ سید شاہ زین علی نقوی (Q139986349) — حافظِ قرآن</div></div>
+    <div class="info-row"><div class="info-label">۳</div><div class="info-val">سید شارق علی نقوی (Q139986346)</div></div>
+    <div class="info-row"><div class="info-label">۴</div><div class="info-val">سید یوشع علی نقوی (Q139986350) — پیدائش کے وقت انتقال</div></div>
+  </div>
+
+  <!-- OTHER SONS OF MUHABBAT ALI -->
+  <h3 class="sub-title">سید محبت علی کے دیگر صاحبزادوں کی اولاد</h3>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>والد</th><th>اولاد (بیٹے)</th></tr></thead>
+      <tbody>
+        <tr><td>سید نصیر علی</td><td>سید فیضان، سید رضوان، سید عدنان شاکر علی، سید ناصر، سید سلمان ذاکر علی</td></tr>
+        <tr><td>سید شباب علی</td><td>سید سجاد علی → سید علی نقوی</td></tr>
+        <tr><td>سید اعجاز علی</td><td>سید اسامہ علی، سید علی، سید عرفان علی نقوی</td></tr>
+        <tr><td>سید جاوید علی</td><td>سید وجاہت علی نقوی، سید حاشر علی نقوی، سید حارس علی نقوی</td></tr>
+        <tr><td>سید امیر علی نقوی</td><td>سید حسنین علی، سید حسن علی، سید حسان علی</td></tr>
+        <tr><td>سید ماجد علی نقوی</td><td>سید رافع علی، سید مصطفیٰ علی، سید حمزہ علی</td></tr>
+        <tr><td>سید ادنان شاکر علی</td><td>سید حیدر علی نقوی، سید مصطفیٰ علی نقوی</td></tr>
+        <tr><td>سید سلمان ذاکر علی</td><td>سید ذویان علی نقوی</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub-title">عزاداری کی روایات</h3>
+  <p>خاندان میں مجالس، نوحہ خوانی، تعزیہ داری، جلوس کی روایت موجود رہی۔ محرم اور چہلم پر نذر و نیاز کا اہتمام ہوتا۔ ۹ محرم کی رات <strong>کُندیلی بھرنے</strong> کی خاص روایت — ہر مرد کے حصے میں ایک خُرما۔ علمِ عباسؑ خاندان میں آج بھی نصب ہے۔</p>
+</section>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<!-- IRFAN SECTION -->
+<section class="section" id="irfan">
+  <h2 class="section-title">عرفانِ اثنا عشریِ اصولی</h2>
+  <p>یہ باب شیعہ اثنا عشری اصولی عرفان کو بطور ایک مکمل، خود مختار اور مستقل روحانی نظام پیش کرتا ہے۔</p>
+
+  <h3 class="sub-title">شجرۂ ولایت</h3>
+  <div class="lineage-chain">
+    <div class="lineage-item"><div class="lineage-num">۱</div><div class="lineage-name imam">حضرت محمد ﷺ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲</div><div class="lineage-name imam">حضرت علی علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳</div><div class="lineage-name imam">امام حسن مجتبیٰ علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴</div><div class="lineage-name imam">امام حسین علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۵</div><div class="lineage-name imam">امام زین العابدین علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶</div><div class="lineage-name imam">امام محمد باقر علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۷</div><div class="lineage-name imam">امام جعفر صادق علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۸</div><div class="lineage-name imam">امام موسیٰ کاظم علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۹</div><div class="lineage-name imam">امام علی رضا علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۰</div><div class="lineage-name imam">امام محمد تقی علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۱</div><div class="lineage-name imam">امام علی نقی علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۲</div><div class="lineage-name imam">امام حسن عسکری علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۳</div><div class="lineage-name wali">امام محمد مہدی عجل اللہ تعالیٰ فرجہ الشریف</div></div>
+  </div>
+</section>
+
+<div class="divider">✦ ✦ ✦</div>
+
+<!-- NAQVI BRANCHES -->
+<section class="section" id="naqvi-branches">
+  <h2 class="section-title">برِّ صغیر میں ساداتِ نقوی کی مستند شاخیں</h2>
+  <p>حضرت امام علی النقی علیہ السلام کی نسلِ طیبہ سے ساداتِ نقوی کی درجِ ذیل مستند شاخیں برِّ صغیر میں آباد ہوئیں:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>شاخ</th><th>مقام</th><th>خصوصیت</th></tr></thead>
+      <tbody>
+        <tr><td>ساداتِ نقوی سرسی</td><td>ضلع مرادآباد</td><td>بانی: سید علی عرب نیشاپوریؒ — علم و خطابت</td></tr>
+        <tr><td>ساداتِ نقوی بخاری/بھکری</td><td>اُوچ شریف، سندھ، پنجاب</td><td>سرخ پوش بخاریؒ کی نسل</td></tr>
+        <tr><td>ساداتِ نقوی جَیسی</td><td>جَیس، ضلع امیٹھی</td><td>علمِ فقہ و منبر کا قدیم مرکز</td></tr>
+        <tr><td>ساداتِ نقوی نسیرآبادی</td><td>نسیرآباد، رائے بریلی</td><td>آیت اللہ دلدار علی غفرانمآبؒ — دارالاجتہاد</td></tr>
+        <tr><td>ساداتِ نقوی امروہی</td><td>امروہہ</td><td>سید شرف الدین شاہ ولایتؒ</td></tr>
+        <tr><td>ساداتِ نقوی کنٹھوری</td><td>کنٹھور، بارہ بنکی</td><td>خاندانِ اجتہاد</td></tr>
+        <tr><td>ساداتِ نقوی مودودی</td><td>مؤ، اعظم گڑھ</td><td>خواجہ قطب الدین مودود چشتیؒ کی نسل</td></tr>
+        <tr><td>ساداتِ نقوی اُوچ شریف</td><td>اُوچ شریف</td><td>مخدوم جہانیاں جہاں گشتؒ کی نسل</td></tr>
+        <tr><td>ساداتِ نقوی بلگرامی</td><td>بلگرام، ہردوئی</td><td>علم، شعر و ادب</td></tr>
+        <tr><td>ساداتِ نقوی جالندھری</td><td>جالندھر، پنجاب</td><td>دینی و خانقاہی خدمات</td></tr>
+        <tr><td>ساداتِ نقوی ٹنڈو جہانیاں</td><td>ٹنڈو جہانیاں، سندھ</td><td>نقوی بخاری شاخ</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- AQAID -->
+<section class="section" id="aqaid">
+  <h2 class="section-title">عقائد، شناخت اور صوفی سلسلے</h2>
+
+  <p>اس خاندان کی نسبی تاریخ سے یہ بات واضح ہے کہ ان کی اصل وابستگی ائمۂ اہلِ بیتؑ کے مکتب سے رہی۔ مختلف ادوار میں سیاسی دباؤ، سماجی حالات اور تقیہ کے باعث بعض نے خود کو مختلف پہچانوں میں پیش کیا، مگر محبتِ اہلِ بیتؑ اور بارہ آئمہؑ سے عقیدت ہمیشہ قائم رہی۔</p>
+
+  <div class="quote-box">سید امید علی نے فرمایا: ہمارے یہاں سب کچھ تھا، سوائے ماتم کے۔ ہمارے یہاں اور شیعہ عقائد میں صرف ایک چیز کا فرق تھا — اور وہ تھا ماتم۔</div>
+
+  <h3 class="sub-title">مستند تصدیق</h3>
+  <ul class="topic-list">
+    <li>خادم الفقراء والمساکین مخدوم سید سلطان جہانیاں نقوی بخاری — سجادہ نشین دربار عالیہ جلالیہ اُوچ شریف</li>
+    <li>پیرِ طریقت سید ناصرالدین نقوی مودودی ہاشمی چشتی — سجادہ نشین آستانہ عالیہ جھالرا شریف، اجمیر</li>
+    <li>دربارِ عالیہ کے ماہرِ انساب و شجرہ نویس</li>
+    <li>مکتبِ امامیہ کے معتبر علماء</li>
+  </ul>
+</section>
+
+<!-- REFERENCES -->
+<section class="section" id="references">
+  <h2 class="section-title">حوالہ جات و مصادر</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>ماخذ</th><th>موضوع</th></tr></thead>
+      <tbody>
+        <tr><td>المعقبون من آل ابی طالب (سید مہدی رجائی)</td><td>نسبی تسلسل</td></tr>
+        <tr><td>عمدۃ الطالب (ابن عنبہ الحسنی)</td><td>انساب آلِ ابی طالب</td></tr>
+        <tr><td>لباب الانساب (ابن فندق بہقی)</td><td>نسبی دستاویزات</td></tr>
+        <tr><td>مرآۃِ جلالی — مزہرِ جلالی</td><td>سادات بخاری تاریخ</td></tr>
+        <tr><td>تذکرہ مخدوم جہانیاں (محمد ایوب قادری)</td><td>مخدوم جہانیاں کی سیرت</td></tr>
+        <tr><td>بحر المطالب (سید کرم حسین بخاری اوچوی)</td><td>انساب بخاریہ</td></tr>
+        <tr><td>تاریخِ اُوچ شریف (سید احمد بخاری)</td><td>اُوچ شریف کی تاریخ</td></tr>
+        <tr><td>الارشاد (شیخ مفید) — بحارالانوار (علامہ مجلسی)</td><td>ائمہ اہلِ بیتؑ</td></tr>
+        <tr><td>کشف الغمہ (علی بن عیسیٰ اربلی)</td><td>سیرتِ ائمہ</td></tr>
+        <tr><td>روضۃ الاقطاب (پیر ڈاکٹر سید فہیم رضا کاظمی چشتی)</td><td>اولیاء کرام</td></tr>
+        <tr><td>سیر اعلام النبلاء (امام ذہبی)</td><td>تاریخی حوالہ</td></tr>
+        <tr><td>صحیح مسلم — مسند احمد — سنن ترمذی</td><td>احادیث</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- COMPLETE NASAB AT END -->
+<section class="section" id="complete-nasab">
+  <h2 class="section-title">مکمل شجرۂ نسب — ایک نظر میں</h2>
+  <p style="color: var(--gold); text-align: center; font-size: 0.85rem; margin-bottom: 1.5rem;">حضرت آدم علیہ السلام سے سید شاہ زیب علی نقوی تک</p>
+
+  <div class="lineage-chain">
+    <div class="lineage-item"><div class="lineage-num">۱</div><div class="lineage-name imam">آدم علیہ السلام ← شیث ← انوش ← ... ← نوحؑ ← ... ← ابراہیمؑ ← اسماعیلؑ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲</div><div class="lineage-name">عدنان ← معد ← نزار ← مضر ← الیاس ← مدرکہ ← خزیمہ ← کنانہ ← نضر ← مالک ← فہر (قریش) ← غالب ← لؤی ← کعب ← مرہ ← کلاب ← قصی ← عبد مناف ← ہاشم ← عبدالمطلب</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳</div><div class="lineage-name imam">حضرت علی بن ابی طالب علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴</div><div class="lineage-name imam">امام حسین علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۵</div><div class="lineage-name imam">امام زین العابدین علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۶</div><div class="lineage-name imam">امام محمد باقر علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۷</div><div class="lineage-name imam">امام جعفر صادق علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۸</div><div class="lineage-name imam">امام موسیٰ کاظم علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۹</div><div class="lineage-name imam">امام علی رضا علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۰</div><div class="lineage-name imam">امام محمد تقی علیہ السلام</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۱</div><div class="lineage-name imam">امام علی نقی الہادی علیہ السلام ← بنیادِ ساداتِ نقوی</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۲</div><div class="lineage-name">سید جعفر ثانی</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۳</div><div class="lineage-name">سید علی الاصغر بن جعفر</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۴</div><div class="lineage-name">سید عبداللہ ادریس بغدادی نقوی</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۵</div><div class="lineage-name">سید ابو یوسف احمد بغدادی نقوی</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۶</div><div class="lineage-name">سید محمود اصغر بخاری</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۷</div><div class="lineage-name">سید محمد ابو الفتح</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۸</div><div class="lineage-name">سید جعفر ابو تراب</div></div>
+    <div class="lineage-item"><div class="lineage-num">۱۹</div><div class="lineage-name">سید علی المعید</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲۰</div><div class="lineage-name wali">حضرت سید جلال الدین سرخ پوش بخاری رحمۃ اللہ علیہ — اُوچ شریف</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲۱</div><div class="lineage-name">سید سلطان احمد کبیر</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲۲</div><div class="lineage-name wali">مخدوم جہانیاں جہاں گشت رحمۃ اللہ علیہ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲۳</div><div class="lineage-name">سید ناصرالدین محمود بخاری</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲۴</div><div class="lineage-name">سید علم الدین بخاری</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲۵</div><div class="lineage-name">سید جلال الدین بخاری</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲۶</div><div class="lineage-name">سید علم الدین (دوم)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲۷</div><div class="lineage-name">سید نظام الدین بخاری</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲۸</div><div class="lineage-name">سید صفی الدین بخاری — سجادہ نشین اُوچ شریف</div></div>
+    <div class="lineage-item"><div class="lineage-num">۲۹</div><div class="lineage-name wali">سید جلال الدین حیدر لاہوری رحمۃ اللہ علیہ</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳۰</div><div class="lineage-name">سید علم الدین نقوی بخاری</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳۱</div><div class="lineage-name">سید زین العابدین (Q139986263)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳۲</div><div class="lineage-name">سید شاہ نظام (Q139986264)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳۳</div><div class="lineage-name">سید یار شاہ حیدر (Q139986267)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳۴</div><div class="lineage-name">سید جہانگیر شاہ (Q139986269)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳۵</div><div class="lineage-name">سید شمس الدین شاہ (Q139986270)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳۶</div><div class="lineage-name">سید شرف الدین شاہ (Q139986271)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳۷</div><div class="lineage-name">سید کبیر شاہ (Q139917917)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳۸</div><div class="lineage-name">سید قطب شاہ (Q139917911)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۳۹</div><div class="lineage-name">سید حیدر شاہ (Q139917836)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴۰</div><div class="lineage-name wali">سید امیر علی شاہ (Q139917834) — نسّابہ و نقیبِ آلِ امیر</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴۱</div><div class="lineage-name">سید شاکر علی (Q139917927)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴۲</div><div class="lineage-name">سید عاشق علی (Q139917929)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴۳</div><div class="lineage-name">سید نفیس علی (Q139917922)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴۴</div><div class="lineage-name">سید محبت علی (Q139986357)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴۵</div><div class="lineage-name">سید امید علی (Q139986326)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴۶</div><div class="lineage-name">سید قدیر علی نقوی (Q139986327)</div></div>
+    <div class="lineage-item"><div class="lineage-num">۴۷</div><div class="lineage-name wali">سید شاہ زیب علی نقوی (Q139986330) — سید شاہ زین علی نقوی (Q139986349) — سید شارق علی نقوی (Q139986346)</div></div>
+  </div>
+</section>
+
+<div class="divider">❖ ❖ ❖</div>
+
+<!-- CLOSING PRAYER -->
+<section class="section">
+  <div class="arabic-text" style="font-size:1.6rem; margin: 2rem 0;">
+    أَسْتَغْفِرُ اللَّهَ الَّذِي لَا إِلٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ
+  </div>
+  <div class="arabic-text" style="font-size:1.3rem; margin: 1rem 0;">
+    لَّآ اِلٰہَ اِلَّآ اَنْتَ سُبْحٰنَکَ اِنِّیْ کُنْتُ مِنَ الظّٰلِمِیْنَ
+  </div>
+  <p style="text-align:center; color: var(--text-dim); font-size:0.88rem;">اللہ تعالیٰ اس شجرے اور اس کتاب میں موجود ہر ایک شخص پر دنیا و آخرت میں اپنی نعمتیں، رحمتیں، کرم، مغفرت اور نجات عطا فرمائے۔ آمین۔</p>
+</section>
+
+</div><!-- content-area -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-title">گلزارِ جلالیہ</div>
+  <p>ساداتِ نقوی البخاری — آلِ امیر — آلِ نفیس</p>
+  <p>اُوچ شریف • لاہور • فیروزآباد • آگرہ • حیدرآباد سندھ • کراچی</p>
+  <p style="margin-top:0.5rem; font-size:0.75rem; opacity:0.6;">
+    مؤلف: سید سلیم رضا بخاری | پروف ریڈنگ: سید شاہ زیب علی نقوی<br>
+    ناشر: تہذیب انٹرنیشنل پبلیکیشنز | بار اول: جنوری ۲۰۲۶
+  </p>
+  <p style="margin-top:0.5rem; font-size:0.72rem; opacity:0.5;">
+    تمام حقوق محفوظ ہیں — Complete Naqvi Bukhari Saadat Genealogy Archive © 2026
+  </p>
+</footer>
+
+</main>
+</div><!-- wrapper -->
+
+<!-- Back to Top -->
+<button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="اوپر جائیں">↑</button>
+
+<script>
+// Back to top button
+window.addEventListener('scroll', function() {
+  var btn = document.getElementById('topBtn');
+  if (window.scrollY > 400) btn.classList.add('show');
+  else btn.classList.remove('show');
+});
+
+// Active nav highlight
+var sections = document.querySelectorAll('.section, h3[id]');
+var navLinks = document.querySelectorAll('.nav-list a');
+
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      var id = entry.target.id || entry.target.closest('.section')?.id;
+      navLinks.forEach(function(link) {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + id) link.classList.add('active');
+      });
+    }
+  });
+}, { threshold: 0.2 });
+
+sections.forEach(function(s) { if(s.id) observer.observe(s); });
+
+// Search
+function searchContent(query) {
+  var items = document.querySelectorAll('.nav-list .nav-item');
+  items.forEach(function(item) {
+    var text = item.textContent.toLowerCase();
+    item.style.display = (query === '' || text.includes(query.toLowerCase())) ? '' : 'none';
+  });
+}
+</script>
+
+</body>
+</html>
